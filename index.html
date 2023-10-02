@@ -10,18 +10,21 @@
 
 <body>
     <div class="background-absolute"></div>
+    <div class="top-image"></div>
     <header>
-        <div class="topwrap">
-            <div class="topwrap__call">
-                <span class="topwrap__call__text">Free Call</span>
-                <span class="topwrap__call__number">+1 234 456 78910</span>
-            </div>
-            <div class="topwrap__media">
-                <ul>
-                    <li>FACEBOOK</li>
-                    <li>TWITTER</li>
-                    <li>DRIBBLE</li>
-                </ul>
+        <div class="topwrap-container">
+            <div class="topwrap">
+                <div class="topwrap__call">
+                    <span class="topwrap__call__text">Free Call</span>
+                    <span class="topwrap__call__number">+1 234 456 78910</span>
+                </div>
+                <div class="topwrap__media">
+                    <ul>
+                        <li>FACEBOOK</li>
+                        <li>TWITTER</li>
+                        <li>DRIBBLE</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <nav>
@@ -32,18 +35,23 @@
                     <span>DIRECTORY AND LISTING</span>
                 </div>
             </div>
-            <div class="nav__list">
+            <div class="navbar">
+                <!-- <div class="nav__list__items">HOME</div>
                 <div class="nav__list__items">HOME</div>
-                <div class="nav__list__items">ABOUT</div>
                 <div class="nav__list__items">LISTING</div>
                 <div class="nav__list__items">BLOG</div>
-                <div class="nav__list__items">CONTACT</div>
+                <div class="nav__list__items">CONTACT</div> -->
+                <ul class="nav__list">
+                    <li class="nav__list__items"><a href="#">HOME</a></li>
+                    <li class="nav__list__items"><a href="#">ABOUT</a></li>
+                    <li class="nav__list__items"><a href="#">LISTING</a></li>
+                    <li class="nav__list__items"><a href="#">BLOG</a></li>
+                    <li class="nav__list__items"><a href="#">CONTACT</a></li>
+                </ul>
             </div>
             <button class="nav__button">+ ADD LISTING</button>
         </nav>
-    </header>
-    <main>
-        <section class="search-section">
+        <div class="search-section">
             <h1>Let's Explore Your</h1>
             <h1>Awesome City</h1>
             <p>Find great places to stay, eat, shop, or visit from local experts.</p>
@@ -71,9 +79,11 @@
                     <input type="submit" value="Search">
                 </div>
             </form>
-        </section>
-        </section>
+        </div>
+    </header>
+    <main>
         <section class="listings">
+
             <div class="listings__items">
                 <i class="fa-solid fa-utensils"></i>
                 <p>Food &</p>
@@ -149,327 +159,333 @@
             </div>
         </section>
 
-        <section class="popular">
-            <p>OUR LISTINGS</p>
-            <h1>Popular Listings</h1>
-            <div class="popular__listings">
-                <div class="popular__listings__items">
-                    <img src="./img/list-1.jpg.webp" alt="">
-                    <div class="hover__wrapper">
-                        <div class="hover__search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+        <section class="popular-container">
+            <div class="popular">
+                <p>OUR LISTINGS</p>
+                <h1>Popular Listings</h1>
+                <div class="popular__listings">
+                    <div class="popular__listings__items">
+                        <img src="./img/list-1.jpg.webp" alt="">
+                        <div class="hover__wrapper">
+                            <div class="hover__search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="logo">
-                        <i class="fa-solid fa-utensils"></i>
-                    </div>
-                    <p>FOOD & DRINKS</p>
-                    <h2>Japanese Restaurant</h2>
-                    <div class="place">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Suite 721 New York NY 10016
-                    </div>
-                    <div class="number">
-                        <i class="fa-solid fa-phone"></i>
-                        +00 123 456 7890
-                    </div>
-                    <div class="rate">
-                        <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
-                    </div>
-                    <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
-                </div>
-                <div class="popular__listings__items">
-                    <img src="./img/list-2.jpg" alt="">
-                    <div class="hover__wrapper">
-                        <div class="hover__search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="logo">
+                            <i class="fa-solid fa-utensils"></i>
                         </div>
-                    </div>
-                    <div class="logo">
-                        <i class="fa-solid fa-hotel"></i>
-                    </div>
-                    <p>HOTEL</p>
-                    <h2>Harbor Lights Hotel</h2>
-                    <div class="place">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Suite 721 New York NY 10016
-                    </div>
-                    <div class="number">
-                        <i class="fa-solid fa-phone"></i>
-                        +00 123 456 7890
-                    </div>
-                    <div class="rate">
-                        <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
-                    </div>
-                    <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
-                </div>
-                <div class="popular__listings__items">
-                    <img src="./img/list-3.jpg.webp" alt="">
-                    <div class="hover__wrapper">
-                        <div class="hover__search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>FOOD & DRINKS</p>
+                        <h2>Japanese Restaurant</h2>
+                        <div class="place">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Suite 721 New York NY 10016
                         </div>
-                    </div>
-                    <div class="logo">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                    <p>SHOPPING</p>
-                    <h2>MS Center Mall of Asia</h2>
-                    <div class="place">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Suite 721 New York NY 10016
-                    </div>
-                    <div class="number">
-                        <i class="fa-solid fa-phone"></i>
-                        +00 123 456 7890
-                    </div>
-                    <div class="rate">
-                        <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
-                    </div>
-                    <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
-                </div>
-                <div class="popular__listings__items">
-                    <img src="./img/list-4.jpg.webp" alt="">
-                    <div class="hover__wrapper">
-                        <div class="hover__search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="number">
+                            <i class="fa-solid fa-phone"></i>
+                            +00 123 456 7890
                         </div>
+                        <div class="rate">
+                            <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
+                        </div>
+                        <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
                     </div>
-                    <div class="logo">
-                        <i class="fa-solid fa-utensils"></i>
+                    <div class="popular__listings__items">
+                        <img src="./img/list-2.jpg" alt="">
+                        <div class="hover__wrapper">
+                            <div class="hover__search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <i class="fa-solid fa-hotel"></i>
+                        </div>
+                        <p>HOTEL</p>
+                        <h2>Harbor Lights Hotel</h2>
+                        <div class="place">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Suite 721 New York NY 10016
+                        </div>
+                        <div class="number">
+                            <i class="fa-solid fa-phone"></i>
+                            +00 123 456 7890
+                        </div>
+                        <div class="rate">
+                            <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
+                        </div>
+                        <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
                     </div>
-                    <p>GYM FITNESS</p>
-                    <h2>Maxout Fitness Gym</h2>
-                    <div class="place">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Suite 721 New York NY 10016
+                    <div class="popular__listings__items">
+                        <img src="./img/list-3.jpg.webp" alt="">
+                        <div class="hover__wrapper">
+                            <div class="hover__search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <p>SHOPPING</p>
+                        <h2>MS Center Mall of Asia</h2>
+                        <div class="place">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Suite 721 New York NY 10016
+                        </div>
+                        <div class="number">
+                            <i class="fa-solid fa-phone"></i>
+                            +00 123 456 7890
+                        </div>
+                        <div class="rate">
+                            <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
+                        </div>
+                        <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
                     </div>
-                    <div class="number">
-                        <i class="fa-solid fa-phone"></i>
-                        +00 123 456 7890
+                    <div class="popular__listings__items">
+                        <img src="./img/list-4.jpg.webp" alt="">
+                        <div class="hover__wrapper">
+                            <div class="hover__search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <p>GYM FITNESS</p>
+                        <h2>Maxout Fitness Gym</h2>
+                        <div class="place">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Suite 721 New York NY 10016
+                        </div>
+                        <div class="number">
+                            <i class="fa-solid fa-phone"></i>
+                            +00 123 456 7890
+                        </div>
+                        <div class="rate">
+                            <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
+                        </div>
+                        <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
                     </div>
-                    <div class="rate">
-                        <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
-                    </div>
-                    <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
                 </div>
             </div>
         </section>
 
-        <section class="offers">
-            <div class="offers__img"></div>
-            <div class="offers__content">
-                <p>SPECIAL OFFERS</p>
-                <h1>We Have Special Offers Every Now and Then</h1>
-            </div>
-            <div class="offers__button__wrapper">
-                <button class="offers__button">SHOW SPECIAL OFFERS</button>
+        <section class="offers-container">
+            <div class="offers">
+                <div class="offers__img"></div>
+                <div class="offers__content">
+                    <p>SPECIAL OFFERS</p>
+                    <h1>We Have Special Offers Every Now and Then</h1>
+                </div>
+                <div class="offers__button__wrapper">
+                    <button class="offers__button">SHOW SPECIAL OFFERS</button>
+                </div>
             </div>
         </section>
 
-        <section class="popular">
-            <p>LISTINGS</p>
-            <h1>Our Listings</h1>
-            <div class="popular__listings">
-                <div class="popular__listings__items">
-                    <img src="./img/list-5.jpg" alt="">
-                    <div class="hover__wrapper">
-                        <div class="hover__search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+        <section class="popular-container">
+            <div class="popular">
+                <p>LISTINGS</p>
+                <h1>Our Listings</h1>
+                <div class="popular__listings">
+                    <div class="popular__listings__items">
+                        <img src="./img/list-5.jpg" alt="">
+                        <div class="hover__wrapper">
+                            <div class="hover__search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="logo">
-                        <i class="fa-solid fa-utensils"></i>
-                    </div>
-                    <p>BEAUTY</p>
-                    <h2>Japanese Restaurant</h2>
-                    <div class="place">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Suite 721 New York NY 10016
-                    </div>
-                    <div class="number">
-                        <i class="fa-solid fa-phone"></i>
-                        +00 123 456 7890
-                    </div>
-                    <div class="rate">
-                        <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
-                    </div>
-                    <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
-                </div>
-                <div class="popular__listings__items">
-                    <img src="./img/list-6.jpg" alt="">
-                    <div class="hover__wrapper">
-                        <div class="hover__search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="logo">
+                            <i class="fa-solid fa-utensils"></i>
                         </div>
-                    </div>
-                    <div class="logo">
-                        <i class="fa-solid fa-hotel"></i>
-                    </div>
-                    <p>BAR & CLUB</p>
-                    <h2>Harbor Lights Hotel</h2>
-                    <div class="place">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Suite 721 New York NY 10016
-                    </div>
-                    <div class="number">
-                        <i class="fa-solid fa-phone"></i>
-                        +00 123 456 7890
-                    </div>
-                    <div class="rate">
-                        <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
-                    </div>
-                    <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
-                </div>
-                <div class="popular__listings__items">
-                    <img src="./img/list-7.jpg" alt="">
-                    <div class="hover__wrapper">
-                        <div class="hover__search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>BEAUTY</p>
+                        <h2>Japanese Restaurant</h2>
+                        <div class="place">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Suite 721 New York NY 10016
                         </div>
-                    </div>
-                    <div class="logo">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                    <p>CIRCUS</p>
-                    <h2>MS Center Mall of Asia</h2>
-                    <div class="place">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Suite 721 New York NY 10016
-                    </div>
-                    <div class="number">
-                        <i class="fa-solid fa-phone"></i>
-                        +00 123 456 7890
-                    </div>
-                    <div class="rate">
-                        <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
-                    </div>
-                    <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
-                </div>
-                <div class="popular__listings__items">
-                    <img src="./img/list-8.jpg" alt="">
-                    <div class="hover__wrapper">
-                        <div class="hover__search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="number">
+                            <i class="fa-solid fa-phone"></i>
+                            +00 123 456 7890
                         </div>
-                    </div>
-                    <div class="logo">
-                        <i class="fa-solid fa-utensils"></i>
-                    </div>
-                    <p>THEATER</p>
-                    <h2>Maxout Fitness Gym</h2>
-                    <div class="place">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Suite 721 New York NY 10016
-                    </div>
-                    <div class="number">
-                        <i class="fa-solid fa-phone"></i>
-                        +00 123 456 7890
-                    </div>
-                    <div class="rate">
-                        <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
-                    </div>
-                    <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
-                </div>
-                <div class="popular__listings__items">
-                    <img src="./img/list-9.jpg" alt="">
-                    <div class="hover__wrapper">
-                        <div class="hover__search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="rate">
+                            <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
                         </div>
+                        <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
                     </div>
-                    <div class="logo">
-                        <i class="fa-solid fa-utensils"></i>
-                    </div>
-                    <p>THEATER</p>
-                    <h2>Japanese Restaurant</h2>
-                    <div class="place">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Suite 721 New York NY 10016
-                    </div>
-                    <div class="number">
-                        <i class="fa-solid fa-phone"></i>
-                        +00 123 456 7890
-                    </div>
-                    <div class="rate">
-                        <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
-                    </div>
-                    <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
-                </div>
-                <div class="popular__listings__items">
-                    <img src="./img/list-10.jpg" alt="">
-                    <div class="hover__wrapper">
-                        <div class="hover__search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="popular__listings__items">
+                        <img src="./img/list-6.jpg" alt="">
+                        <div class="hover__wrapper">
+                            <div class="hover__search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="logo">
-                        <i class="fa-solid fa-hotel"></i>
-                    </div>
-                    <p>SPORTS</p>
-                    <h2>Harbor Lights Hotel</h2>
-                    <div class="place">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Suite 721 New York NY 10016
-                    </div>
-                    <div class="number">
-                        <i class="fa-solid fa-phone"></i>
-                        +00 123 456 7890
-                    </div>
-                    <div class="rate">
-                        <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
-                    </div>
-                    <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
-                </div>
-                <div class="popular__listings__items">
-                    <img src="./img/list-11.jpg" alt="">
-                    <div class="hover__wrapper">
-                        <div class="hover__search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="logo">
+                            <i class="fa-solid fa-hotel"></i>
                         </div>
-                    </div>
-                    <div class="logo">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                    <p>GAMES</p>
-                    <h2>MS Center Mall of Asia</h2>
-                    <div class="place">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Suite 721 New York NY 10016
-                    </div>
-                    <div class="number">
-                        <i class="fa-solid fa-phone"></i>
-                        +00 123 456 7890
-                    </div>
-                    <div class="rate">
-                        <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
-                    </div>
-                    <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
-                </div>
-                <div class="popular__listings__items">
-                    <img src="./img/list-12.jpg" alt="">
-                    <div class="hover__wrapper">
-                        <div class="hover__search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>BAR & CLUB</p>
+                        <h2>Harbor Lights Hotel</h2>
+                        <div class="place">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Suite 721 New York NY 10016
                         </div>
+                        <div class="number">
+                            <i class="fa-solid fa-phone"></i>
+                            +00 123 456 7890
+                        </div>
+                        <div class="rate">
+                            <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
+                        </div>
+                        <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
                     </div>
-                    <div class="logo">
-                        <i class="fa-solid fa-utensils"></i>
+                    <div class="popular__listings__items">
+                        <img src="./img/list-7.jpg" alt="">
+                        <div class="hover__wrapper">
+                            <div class="hover__search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <p>CIRCUS</p>
+                        <h2>MS Center Mall of Asia</h2>
+                        <div class="place">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Suite 721 New York NY 10016
+                        </div>
+                        <div class="number">
+                            <i class="fa-solid fa-phone"></i>
+                            +00 123 456 7890
+                        </div>
+                        <div class="rate">
+                            <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
+                        </div>
+                        <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
                     </div>
-                    <p>PLACES</p>
-                    <h2>Maxout Fitness Gym</h2>
-                    <div class="place">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Suite 721 New York NY 10016
+                    <div class="popular__listings__items">
+                        <img src="./img/list-8.jpg" alt="">
+                        <div class="hover__wrapper">
+                            <div class="hover__search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <p>THEATER</p>
+                        <h2>Maxout Fitness Gym</h2>
+                        <div class="place">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Suite 721 New York NY 10016
+                        </div>
+                        <div class="number">
+                            <i class="fa-solid fa-phone"></i>
+                            +00 123 456 7890
+                        </div>
+                        <div class="rate">
+                            <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
+                        </div>
+                        <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
                     </div>
-                    <div class="number">
-                        <i class="fa-solid fa-phone"></i>
-                        +00 123 456 7890
+                    <div class="popular__listings__items">
+                        <img src="./img/list-9.jpg" alt="">
+                        <div class="hover__wrapper">
+                            <div class="hover__search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <p>THEATER</p>
+                        <h2>Japanese Restaurant</h2>
+                        <div class="place">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Suite 721 New York NY 10016
+                        </div>
+                        <div class="number">
+                            <i class="fa-solid fa-phone"></i>
+                            +00 123 456 7890
+                        </div>
+                        <div class="rate">
+                            <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
+                        </div>
+                        <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
                     </div>
-                    <div class="rate">
-                        <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
+                    <div class="popular__listings__items">
+                        <img src="./img/list-10.jpg" alt="">
+                        <div class="hover__wrapper">
+                            <div class="hover__search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <i class="fa-solid fa-hotel"></i>
+                        </div>
+                        <p>SPORTS</p>
+                        <h2>Harbor Lights Hotel</h2>
+                        <div class="place">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Suite 721 New York NY 10016
+                        </div>
+                        <div class="number">
+                            <i class="fa-solid fa-phone"></i>
+                            +00 123 456 7890
+                        </div>
+                        <div class="rate">
+                            <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
+                        </div>
+                        <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
                     </div>
-                    <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
+                    <div class="popular__listings__items">
+                        <img src="./img/list-11.jpg" alt="">
+                        <div class="hover__wrapper">
+                            <div class="hover__search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <p>GAMES</p>
+                        <h2>MS Center Mall of Asia</h2>
+                        <div class="place">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Suite 721 New York NY 10016
+                        </div>
+                        <div class="number">
+                            <i class="fa-solid fa-phone"></i>
+                            +00 123 456 7890
+                        </div>
+                        <div class="rate">
+                            <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
+                        </div>
+                        <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
+                    </div>
+                    <div class="popular__listings__items">
+                        <img src="./img/list-12.jpg" alt="">
+                        <div class="hover__wrapper">
+                            <div class="hover__search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <p>PLACES</p>
+                        <h2>Maxout Fitness Gym</h2>
+                        <div class="place">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Suite 721 New York NY 10016
+                        </div>
+                        <div class="number">
+                            <i class="fa-solid fa-phone"></i>
+                            +00 123 456 7890
+                        </div>
+                        <div class="rate">
+                            <p>Review <span>5.0/5</span> <i class="fa-solid fa-star"></i> <span>(100)</span></p>
+                        </div>
+                        <div class="heart__cover"><i class="fa-regular fa-heart popular__heart"></i></div>
+                    </div>
                 </div>
             </div>
         </section>
