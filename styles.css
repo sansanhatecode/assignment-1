@@ -12,8 +12,8 @@ body {
 
 header {
     position: relative;
+    width: 100%;
     height: 100vh;
-    z-index: 0;
 }
 
 main {
@@ -144,7 +144,7 @@ nav{
 }
 
 .search-section {
-    margin-top: 25vh;
+    margin-top: 15vh;
     position: relative;
     width: 100%;
     display: flex;
@@ -172,7 +172,7 @@ nav{
     display: flex;
     align-items: center;
     width: 60%;
-    margin-top: 80px;
+    margin-top: 10vh;
     background-color: #ffffff;
     border-radius: 5px;
     color: rgba(131, 130, 130, 0.3);
@@ -206,7 +206,7 @@ nav{
     border: none;
     color: rgba(131, 130, 130, 0.3);
     font-size: 14px;
-    padding: 10px 0px 10px 10px;
+    padding: 15px 0px 15px 15px;
 }
 
 .form__searchbar input::placeholder, .form__locationbar input::placeholder {
@@ -231,7 +231,7 @@ nav{
     color: #ffffff;
     border: 1px solid #ff414d;
     font-size: 14px;
-    padding: 10px 0px 10px 10px;
+    padding: 15px 0px 15px 15px;
     cursor: pointer;
 }
 
@@ -243,7 +243,7 @@ form div input:focus, form div select:focus{
     position: absolute;
     background-color:#f0f4f7;
     width: 100%;
-    height: 100vh;
+    height: 500vh;
     top: calc(100vh + 20px);
 }
 
@@ -252,7 +252,7 @@ form div input:focus, form div select:focus{
     margin: auto;
     max-width: 1300px;
     width: 85%;
-    margin-top: -50px;
+    margin-top: -6vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -344,10 +344,8 @@ form div input:focus, form div select:focus{
 .popular-container {
     width: 100%;
     background-color: #f0f4f7;
-    padding-top: 132px;
-    padding-bottom: 132px;
-    margin-top: -2px;
-    margin-bottom: -2px;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
 }
 
 .popular {
@@ -378,7 +376,8 @@ form div input:focus, form div select:focus{
     font-weight: 700;
 }
 
-.popular h1 {
+.popular h1,
+.blog-container h1 {
     color: rgba(0, 0, 0, 0.8);
     font-size: 50px;
     font-weight: 700;
@@ -528,13 +527,14 @@ form div input:focus, form div select:focus{
     height: 270px;
     width: 100%;
     background-color: #f0f4f7;
+    display: flex;
+    justify-content: end;
 }
 
 .offers {
     position: relative;
     width: 92.5%;
     max-width: calc(100vw - (100vw - 1300px) /2 );
-    float: right;
     background: repeating-linear-gradient(
         -50deg,
         #ff414d,
@@ -606,40 +606,46 @@ form div input:focus, form div select:focus{
 }
 
 .welcome {
+    position: relative;
     width: 100%;
-    height: calc(100vh + 50px);
+    /* height: calc(100vh + 50px); */
     background-color: #ffffff;
+    display: flex;
+    justify-content: end;
 }
 
 .welcome__content {
+    position: relative;
     width: 92.5%;
     max-width: calc(100vw - (100vw - 1300px) /2 );
-    float: right;
     display: flex;
+    justify-content: start;
 }
 
 .welcome__content__img {
     width: 34%;
-    height: calc(100vh + 50px);
+    /* height: calc(100vh + 50px); */
+    min-height: calc(100vh + 50px);
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)), url(./img/about.jpg.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #fff;
-    float: left;
 }
 
 .welcome__content__text {
-    width: 64%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px 40px
+    /* gap: 20px; */
+    padding: 50px;
 }
 
 .welcome__content__text p, 
 .testimonial p,
-.find-out p {
+.find-out p,
+.blog-container p {
     font-size: 13px;
     margin-bottom: 5px;
     color: #ff414d;
@@ -656,7 +662,9 @@ form div input:focus, form div select:focus{
 }
 
 .welcome__content__text span,
-.testimonial span{
+.testimonial span,
+.find-out__options span,
+.blog__items span {
     font-size: 16px;
     line-height: 1.8;
     font-weight: 400;
@@ -666,7 +674,7 @@ form div input:focus, form div select:focus{
 .number-list-wrapper {
     width: 100%;
     display: flex;
-    margin-top: 50px;
+    margin-top: 30px;
     height: 169px;
     justify-content: space-between;
 }
@@ -686,7 +694,8 @@ form div input:focus, form div select:focus{
 }
 
 .testimonial {
-    padding-top: 130px;
+    position: relative;
+    padding-top: 15vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -697,7 +706,8 @@ form div input:focus, form div select:focus{
 
 .testimonial__cmt-list {
     margin-top: 50px;
-    width: calc(88%+60px);
+    width: 85%;
+    max-width: 1300px;
     display: flex;
     justify-content: space-between;
     max-width: calc((305px*4 + 60px));
@@ -710,7 +720,6 @@ form div input:focus, form div select:focus{
     flex-direction: column;
     justify-content: center;
     width: 32%;
-    height: 260px;
     background-color: #ffffff;
     padding: 20px 50px;
     border-radius: 5px;
@@ -749,17 +758,24 @@ form div input:focus, form div select:focus{
     background-repeat: no-repeat;
 }
 
-.testimonial h3 {
+.testimonial h3,
+.find-out__options h3,
+.blog__items h3 {
     margin-bottom: 15px;
     font-weight: 600;
     font-size: 22px;
 }
 
+.find-out-container {
+    position: relative;
+    width: 100%;
+}
+
 .find-out {
     position: relative;
     width: 100%;
-    height: 600px;
-    padding-top: 100px;
+    height: 65vh;
+    padding-top: 10vh;
     position: relative;
     background-image: url(./img/curls.png.webp);
     text-align: center;
@@ -775,10 +791,12 @@ form div input:focus, form div select:focus{
 
 .find-out__clip {
     position: absolute;
-    top: 270px;
-    width: 86%;
-    left: 7%;
-    height: 600px;
+    top: 30vh;
+    width: 85%;
+    max-width: 1300px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 65vh;
     overflow: hidden;
     background-image: url(./img/bg_2.jpg.webp);
     background-size: cover;
@@ -800,4 +818,133 @@ form div input:focus, form div select:focus{
     align-items: center;
     justify-content: center;
     border-radius: 40px;
+}
+
+.find-out__options-list-container {
+    /* margin-top: calc(55vh - 116.6px); */
+    background-color: #ffffff;
+    padding-top: 50vh;
+    padding-bottom: 15vh;
+}
+
+.find-out__options-list {
+    width: 85%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.find-out__options {
+    background-color: #f0f4f7;
+    width: calc(25% - 20px);
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.find-out__logo {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: #ff414d;
+    border-radius: 40px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.find-out__logo i {
+    font-size: 45px;
+}
+
+.blog-container {
+    width: 100%;
+    padding: 15vh 0vh;
+    text-align: center;
+    background-color: #f0f4f7;
+}
+
+.blog-list{
+    width: 85%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.blog__items{
+    position: relative;
+    width: calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.blog__items p{
+    padding-top: 40px;
+}
+
+.blog__items p span{
+    color: #999999;
+    padding-right: 10px;
+    padding-left: 40px;
+    font-size: 13px;
+}
+
+.blog__items h3{
+    padding: 0px 40px;
+}
+
+.blog__items span {
+    padding: 0px 40px;
+    overflow: hidden;
+}
+
+.blog__items__img {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+.blog-img1 {
+    background-image: url(./img/image_1.jpg.webp);
+}
+
+.blog-img2 {
+    background-image: url(./img/image_2.jpg.webp);
+}
+
+.blog-img3 {
+    background-image: url(./img/image_3.jpg.webp);
+}
+
+.blog-img4 {
+    background-image: url(./img/image_4.jpg.webp);
+}
+
+.blog__items__avatar {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.blog__items__avatar .avatar-img {
+    background-image: url(./img/person_3.jpg.webp);
+    width: 40px;
+    height: 40px;
 }
